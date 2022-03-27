@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    fieldset{
+      font-weight: bold;
+    }
+    fieldset:nth-child(2){
+      padding-top: 30px;
+    }
+    input{
+      display: block;
+      margin: 5px;
+      max-width: 50%;
+    }
+    button{
+      margin-left: 5px;
+    }
+    div{
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+    <fieldset>
+      <legend>Notas bimestrais</legend>
+      Bimestre 1:<input type="number" id="bim1">
+      Bimestre 2: <input type="number" id="bim2">
+      Bimestre 2: <input type="number" id="bim3">
+      Bimestre 4: <input type="number" id="bim4">
+      <button type="submit" onclick="bimCalc()">Enviar</button>
+      <div id="resBim"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Nota da recuperação</legend>
+      Recuperação: <input type="number" id="recNote">
+      <button type="submit" onclick="recCalc()">Enviar</button>
+      <div id="resRec"></div>
+    </fieldset>
+  <script src="./exer2.js"></script>
+</body>
+
+</html>
